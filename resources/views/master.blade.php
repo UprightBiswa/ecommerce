@@ -24,6 +24,10 @@
 
 </body>
 <style>
+           .navbar-default {
+    background-color: rgb(255, 174, 187);
+    
+    }       
     .custom-login{
         height: 500px;
         padding-top: 100px
@@ -59,5 +63,11 @@
         margin-bottom: 20px;
         padding-bottom:20px;
     }
+
+        .trending-item {
+        display: inline-block;
+        width: 25%;
+        padding: 0 10px;
+        }
 </style>
 </html>
