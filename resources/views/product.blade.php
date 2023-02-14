@@ -14,9 +14,9 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               @foreach ($products as $item)
-              <div class="item {{$item['id']== 1?'active':''}}">
+              <div class="item {{$item['id']== 6?'active':''}}">
                <a href="detail/{{$item['id']}}">
-                <img class="slider-img" src="{{$item['gallery']}}" alt="Chania">
+                <img class="slider-img" src="{{$item['gallery']}}" alt="mobile photo">
                 <div class="carousel-caption slider-text ">
                   <h3>{{$item['name']}}</h3>
                   <p>{{$item['description']}}</p>
@@ -37,7 +37,7 @@
             </a>
           </div>
           <div class="tranding-wrapper">
-            <h1>Tranding Products</h1>
+            <h1>Tranding Products </h1>
             <div class="">
                 @foreach ($products as $item)
                 <div class="trending-item">
@@ -50,8 +50,37 @@
                 </div> 
                 @endforeach
               </div>
-          </div>
-   
+          </div>     
+          <div class="tranding-wrapper">
+            <h1> Products </h1>
+            <div class="">
+                @foreach ($products as $item)
+                <div class="trending-item">
+                    <a href="detail/{{$item['id']}}">
+                  <img class="trending-img" src="{{$item['gallery']}}" >
+                  <div class="">
+                    <h3>{{$item['name']}}</h3>
+                  </div>
+                    </a>
+                </div> 
+                @endforeach
+              </div>
+          </div>  
+          <div class="tranding-wrapper">
+            <h1>Products </h1>
+            <div class="">
+                @foreach ($products as $item)
+                <div class="trending-item">
+                    <a href="detail/{{$item['id']}}">
+                  <img class="trending-img" src="{{$item['gallery']}}" >
+                  <div class="">
+                    <h3>{{$item['name']}}</h3>
+                  </div>
+                    </a>
+                </div> 
+                @endforeach
+              </div>
+          </div>         
 </div>
 
 @endsection
